@@ -4,10 +4,12 @@
   "version": "0.0.1",
   "license": "MIT",
   "scripts": {
+    "prepare": "yarn check:deps",
     "develop": "gatsby develop",
-    "start": "npm run develop",
+    "start": "yarn develop",
     "build": "gatsby build --prefix-paths",
-    "serve": "gatsby serve"
+    "serve": "gatsby serve",
+    "check:deps": "depcruise --config ../.dependency-cruiser.js src"
   },
   "dependencies": {
     "@stackbit/gatsby-plugin-menus": "latest",
@@ -15,8 +17,8 @@
     "classnames": "latest",
     "fs-extra": "latest",
     "gatsby": "latest",
-    "gatsby-plugin-sass": "latest",
     "gatsby-plugin-react-helmet": "latest",
+    "gatsby-plugin-sass": "latest",
     "gatsby-source-filesystem": "latest",
     "gatsby-transformer-remark": "latest",
     "js-yaml": "latest",
@@ -26,6 +28,7 @@
     "moment-strftime": "latest",
     "node-sass": "latest",
     "node-sass-utils": "latest",
+    "prop-types": "^15.7.2",
     "react": "latest",
     "react-dom": "latest",
     "react-helmet": "latest",
