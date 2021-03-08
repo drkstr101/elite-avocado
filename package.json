@@ -9,7 +9,8 @@
     "start": "yarn develop",
     "build": "gatsby build --prefix-paths",
     "serve": "gatsby serve",
-    "check:deps": "depcruise --config ../.dependency-cruiser.js src"
+    "check:deps": "depcruise --config ../.dependency-cruiser.js src",
+    "write:deps": "depcruise  --config ../.dependency-cruiser.js --output-type dot src | dot -T svg > dependencygraph.svg"
   },
   "dependencies": {
     "@stackbit/gatsby-plugin-menus": "latest",

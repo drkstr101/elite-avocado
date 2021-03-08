@@ -72,3 +72,7 @@ If you need a hand, make sure to check the [Stackbit support page](https://stack
 ## Colophon
 
 Generated at `2021-03-07T19:47:53.292Z` by Stackbit version `0.3.50`.
+
+## Dependency Graph
+
+![Depcruise](./dependencygraph.svg)
