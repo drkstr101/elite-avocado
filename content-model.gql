@@ -1,0 +1,148 @@
+type StackbitPageMeta { type: String label: String fields: [Fields ] }
+
+type Action { type: String
+  label: String
+  labelField: String
+  fields: [Fields ] }
+
+type Fields { type: String
+  name: String
+  label: String
+  description: String
+  required: Boolean
+  options: [String ] }
+
+type FormField { type: String
+  label: String
+  labelField: String
+  fields: [Fields ] }
+
+type GridItem { type: String
+  label: String
+  labelField: String
+  fields: [Fields ] }
+
+type Feature { type: String
+  label: String
+  labelField: String
+  fields: [Fields ] }
+
+type FormSection { type: String
+  label: String
+  labelField: String
+  fields: [Fields ] }
+
+type CtaSection { type: String
+  label: String
+  labelField: String
+  fields: [Fields ] }
+
+type BlogFeedSection { type: String
+  label: String
+  labelField: String
+  fields: [Fields ] }
+
+type GridSection { type: String
+  label: String
+  labelField: String
+  fields: [Fields ] }
+
+type FeaturesSection { type: String
+  label: String
+  labelField: String
+  fields: [Fields ] }
+
+type HeroSection { type: String
+  label: String
+  labelField: String
+  fields: [Fields ] }
+
+type Advanced { type: String
+  label: String
+  layout: String
+  hideContent: Boolean
+  fields: [Fields ] }
+
+type Post { type: String
+  urlPath: String
+  label: String
+  layout: String
+  folder: String
+  fields: [Fields ]
+  exclude: [String ] }
+
+type Page { type: String
+  label: String
+  layout: String
+  exclude: String
+  fields: [Fields ] }
+
+type Tag { type: String
+  label: String
+  folder: String
+  fields: [Fields ] }
+
+type Category { type: String
+  label: String
+  folder: String
+  fields: [Fields ] }
+
+type Person { type: String
+  label: String
+  folder: String
+  fields: [Fields ] }
+
+type Footer { type: String
+  label: String
+  labelField: String
+  fields: [Fields ] }
+
+type Header { type: String
+  label: String
+  labelField: String
+  fields: [Fields ] }
+
+type Config { type: String label: String fields: [Fields ] }
+
+type ContentModel {
+  stackbit_page_meta: StackbitPageMeta
+  action: Action
+  form_field: FormField
+  grid_item: GridItem
+  feature: Feature
+  form_section: FormSection
+  cta_section: CtaSection
+  blog_feed_section: BlogFeedSection
+  grid_section: GridSection
+  features_section: FeaturesSection
+  hero_section: HeroSection
+  advanced: Advanced
+  post: Post
+  page: Page
+  tag: Tag
+  category: Category
+  person: Person
+  footer: Footer
+  header: Header
+  config: Config
+}
+
+type StackbitSite {
+  stackbitVersion: String
+  ssgName: String
+  ssgVersion: String
+  buildCommand: String
+  publishDir: String
+  staticDir: String
+  uploadDir: String
+  dataDir: String
+  pagesDir: String
+  pageLayoutKey: String
+  models: ContentModel
+  logicFields: [String ]
+}
+
+# Types with identical fields:
+# StackbitPageMeta Config
+# Action FormField GridItem Feature FormSection CtaSection BlogFeedSection GridSection FeaturesSection HeroSection Footer Header
+# Tag Category Person

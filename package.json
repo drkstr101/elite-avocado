@@ -13,6 +13,9 @@
     "write:deps": "depcruise  --config ../.dependency-cruiser.js --output-type dot src | dot -T svg > dependencygraph.svg"
   },
   "dependencies": {
+    "@material-ui/core": "^4.11.3",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/styles": "^4.11.3",
     "@stackbit/gatsby-plugin-menus": "latest",
     "chokidar": "latest",
     "classnames": "latest",
@@ -21,6 +24,7 @@
     "gatsby-plugin-react-helmet": "latest",
     "gatsby-plugin-sass": "latest",
     "gatsby-source-filesystem": "latest",
+    "gatsby-theme-material-ui": "^1.0.13",
     "gatsby-transformer-remark": "latest",
     "js-yaml": "latest",
     "lodash": "latest",

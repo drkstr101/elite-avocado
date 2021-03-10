@@ -1,20 +1,20 @@
 {
-    "title": "Stackbit DIY Theme",
-    "layout_type": "boxed",
+    "title": "Watheia Labs -- Domain Driven Ideas",
+    "layout_type": "full-width",
     "style": "classic",
-    "palette": "green",
+    "palette": "blue",
     "mode": "light",
     "base_font": "serif",
     "header": {
         "type": "header",
-        "title": "DIY",
-        "logo": "images/classic/logo.svg",
-        "logo_alt": "DIY logo",
+        "title": "Watheia Labs",
+        "logo": "images/logo-w-dark.png",
+        "logo_alt": "Watheia logo",
         "has_primary_nav": true,
         "primary_nav_links": [
             {
                 "type": "action",
-                "label": "Features",
+                "label": "Services",
                 "url": "/features",
                 "style": "link"
             },
@@ -59,7 +59,7 @@
             }
         ],
         "has_anncmnt": true,
-        "anncmnt_content": "Curabitur ac tellus mattis, tempor ipsum eu, eleifend sapien. **[Learn More](/pricing/)**",
+        "anncmnt_content": "Limitted time offer: Free websites for companies located in south-eastern washington. **[Learn More](/pricing/)**",
         "anncmnt_align": "left",
         "anncmnt_is_home_only": true,
         "anncmnt_has_close": true,
